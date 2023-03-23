@@ -3,7 +3,7 @@ const userName = "Max";
 
 let age = 30;
 
-const add = (a: number, b: number) => a + b;
+const add = (a: number, b: number = 1) => a + b;
 
 const printOutput: (a: number | string) => void = (output) =>
   console.log(output);
@@ -16,7 +16,7 @@ if (button) {
   });
 }
 
-printOutput(add(2, 5));
+printOutput(add(2));
 
 // if (age > 20) {
 //   let isOld = true;
